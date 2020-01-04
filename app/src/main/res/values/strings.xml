@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Kotline_CRRUD</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="update_item">Update Item</string>
+    <string name="update">Update</string>
+    <string name="pick_image_title">Select Image</string>
+    <string name="empty_field">some fields cannot be empty!</string>
+    <string name="cannot_be_empty">cannot be empty</string>
+    <string name="btn_post">POST</string>
+    <string name="camera">camera</string>
+    <string name="gallery">gallery</string>
+    <string name="empty_link">Enter the link</string>
+    <string name="link">link</string>
+    <string name="status_color">#ff03DAC5</string>
+    <string name="permission_denied_text">You have previously declined this permission.  You must approve this permission in \"Permissions\" in the app settings on your device.</string>
+    <string name="white_color">#ffffff</string>
+    <string name="curency">₹.</string>
+    <string name="qty_text">Qty:</string>
+    <string name="sdsd">#sfsads</string>
+    <string name="empty_item">Click the floating button to create an item</string>
+    <string name="empty_string">cannot be empty</string>
+</resources>

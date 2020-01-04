@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.CreateFragment"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="40dp"
+                    android:text="CREATE ITEM"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_size"
+                    android:layout_marginTop="30dp"
+                    android:text="Item Name." />
+
+                <EditText
+                    android:id="@+id/et_item_name"
+                    android:layout_width="340dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/circular_border"
+                    android:paddingStart="@dimen/padding_size"
+                    android:paddingLeft="5dp" />
+
+                <TextView
+                    android:id="@+id/tv_item_short_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_size"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:text="Short desription" />
+
+                <EditText
+                    android:id="@+id/et_item_short_desc"
+                    android:layout_width="340dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circular_border"
+                    android:paddingStart="@dimen/padding_size"
+                    android:paddingEnd="@dimen/padding_size"
+                    android:maxLength="80"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/tv_item_long_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_size"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:text="Long descrition" />
+
+
+                <EditText
+                    android:id="@+id/et_item_long_desc"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circular_border"
+                    android:gravity="top|start"
+                    android:lines="6"
+                    android:maxLines="6"
+                    android:paddingStart="@dimen/padding_size"
+                    android:paddingRight="@dimen/padding_size"
+                    android:maxLength="220"/>
+
+                <TextView
+                    android:id="@+id/tv_item_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_size"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:text="Image URL" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/btn_choose_gallery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:text="Gallery"
+                        android:background="@drawable/circular_border"
+                        android:backgroundTint="@color/grey"/>
+
+                    <Button
+                        android:id="@+id/btn_camera"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:text="Capture"
+                        android:layout_marginHorizontal="30dp"
+                        android:background="@drawable/circular_border"
+                        android:backgroundTint="@color/grey"/>
+
+                    <Button
+                        android:id="@+id/btn_link"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:text="Link"
+                        android:background="@drawable/circular_border"
+                        android:backgroundTint="@color/grey"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_item_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_size"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:text="Amount" />
+
+                <EditText
+                    android:id="@+id/et_item_amount"
+                    android:layout_width="340dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circular_border"
+                    android:inputType="number"
+                    android:paddingStart="@dimen/padding_size" />
+
+                <TextView
+                    android:id="@+id/tv_item_quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_size"
+                    android:layout_marginTop="@dimen/margin_top"
+                    android:text="Quantity" />
+
+                <EditText
+                    android:id="@+id/et_item_quantity"
+                    android:layout_width="340dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circular_border"
+                    android:inputType="number"
+                    android:paddingStart="@dimen/padding_size" />
+
+                <Button
+                    android:id="@+id/btn_post"
+                    android:layout_width="340dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginBottom="80dp"
+                    android:background="@drawable/circular_border"
+                    android:backgroundTint="@color/grey"
+                    android:text="POST"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="30dp"
+                android:text="X"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:background="@drawable/round_corder"
+                android:elevation="30dp"
+                android:clickable="true"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>
